@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A9A9A9;
+}
+
+.login {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+.footers {
+    text-align: center;
+    padding: 10px;
+    bottom: 10px;
+    left: 0%;
+    width: 100%;
+	position: absolute;
+}    
+
+.footers1 {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+	position: relative;
+}
+
+.options {
+	text-align: center;
+    padding: 10px;
+    width: 100%;
+	position: absolute;
+	
+}
+
+.menuitem {
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+}
