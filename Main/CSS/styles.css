@@ -97,6 +97,10 @@ body {
     background-color: #A9A9A9;
 }
 
+.search-container {
+	display:none;
+}
+
 .search-box{
   width: fit-content;
   height: fit-content;
@@ -153,8 +157,7 @@ body {
 }
 
 .body-search-box {
-	border: 3px solid black;
-	width: 33%;
+
 }
 
 .body-headertext {

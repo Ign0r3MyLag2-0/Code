@@ -40,13 +40,13 @@ session_start();
 	<h1> Welcome to HealthCentral.com - Your Gateway to Health Excellence! </h1>
 </div>
 
-<div class="body-search-box">
+<div class="body-search-box" id="body-search-box">
 	<div class="search-box" style="padding:5px">
 	   <button class="btn-search" onclick="fetchWeatherData()"><i class="fas fa-search"></i></button>
 	   <input type="text" class="input-search" id="city-input" placeholder="Type to Search city...">
 	</div>
 
-	<div class="search-container" style="padding:5px">
+	<div class="search-container" id="body-weather-search" style="padding:5px">
 		<h1 id="app_header">Current Weather in ?</h1>
 		<div id="weather">Loading weather data...</div>
 		<img id="weather-icon" src="" alt="Weather Icon"/>
@@ -119,7 +119,13 @@ session_start();
 		let condition = data.current.condition.text;
 		let iconUrl = data.current.condition.icon;
 		let location = data.location.name;
-
+		let weather_text = document.getElementById("body-weather-search")
+		let weather_border = document.getElementById("body-search-box")
+		
+		weather_border.style.border = `3px solid black`;
+		weather_border.style.width = `33%`;
+		weather_border.style.height = `250px`;
+		weather_text.style.display = `block`;
 		weatherDiv.innerText = `Location: ${location} Temperature: ${temp_c}°C, Condition: ${condition}`;
 		iconImg.src = `https:${iconUrl}`; // Setting the src attribute of the img element
 		iconImg.alt = `Weather condition: ${condition}`;
