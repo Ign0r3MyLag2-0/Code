@@ -40,16 +40,18 @@ session_start();
 	<h1> Welcome to HealthCentral.com - Your Gateway to Health Excellence! </h1>
 </div>
 
-<div class="search-box">
-   <button class="btn-search" onclick="fetchWeatherData()"><i class="fas fa-search"></i></button>
-   <input type="text" class="input-search" id="city-input" placeholder="Type to Search city...">
-</div>
+<div class="body-search-box">
+	<div class="search-box" style="padding:5px">
+	   <button class="btn-search" onclick="fetchWeatherData()"><i class="fas fa-search"></i></button>
+	   <input type="text" class="input-search" id="city-input" placeholder="Type to Search city...">
+	</div>
 
-<div class="search-container">
-    <h1 id="app_header">Current Weather in ?</h1>
-    <div id="weather">Loading weather data...</div>
-    <img id="weather-icon" src="" alt="Weather Icon"/>
-    <div id="myMap" style="width: 100px; height: 100px;"></div>
+	<div class="search-container" style="padding:5px">
+		<h1 id="app_header">Current Weather in ?</h1>
+		<div id="weather">Loading weather data...</div>
+		<img id="weather-icon" src="" alt="Weather Icon"/>
+		<div id="myMap" style="width: 100px; height: 100px;"></div>
+	</div>
 </div>
 
 <div class="body-homemap">
